@@ -1,0 +1,35 @@
+# Java
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# Build / output
+/bin/
+/out/
+/target/
+/.gradle/
+/.mvn/
+
+# IDEs and editors
+/.classpath
+/.project
+/.settings/
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code (ignore entirely)
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local libs (do not commit JDBC drivers)
+/lib/
+
+# Env
+.env
+.env.*

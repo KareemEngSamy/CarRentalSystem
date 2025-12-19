@@ -1,17 +1,13 @@
 package Controller;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Scanner;
-
-//import Model.Admin;
 import Model.Client;
 import Model.Database;
 import Model.Operation;
 import Model.User;
-
-//:(
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class AddNewAccount implements Operation {
 
