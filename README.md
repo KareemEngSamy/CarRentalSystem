@@ -1,8 +1,9 @@
 # Car Rental System
 
-Console-based car rental application in Java with MySQL persistence. Clean separation between domain models (Model) and operations/UI (Controller) using plain JDBC.
+- Console-based car rental application in Java with MySQL persistence. 
+- Clean separation between domain models (Model) and operations/UI (Controller) using plain JDBC.
 
-**Key Features**
+## Key Features
 - Client: view cars, rent/return, view own rentals, edit profile, change password
 - Admin: add/update/delete cars, view all rentals and user-specific rentals, add admins
 
@@ -40,13 +41,6 @@ mkdir -Force bin | Out-Null
 javac -d bin (Get-ChildItem src -Recurse -Filter *.java | ForEach-Object { $_.FullName })
 ```
 
-Linux/macOS:
-```bash
-mkdir -p bin
-find src -name "*.java" > sources.txt
-javac -d bin @sources.txt
-```
-
 ## Run (manual)
 Windows:
 ```powershell
@@ -54,11 +48,6 @@ $jar = (Get-ChildItem lib -Filter mysql-connector-*.jar | Select-Object -First 1
 java -cp "bin;$jar" Controller.Main
 ```
 
-Linux/macOS:
-```bash
-JAR=$(ls lib/mysql-connector-*.jar | head -n1)
-java -cp "bin:$JAR" Controller.Main
-```
 
 ## Notes
 - IDs are computed via `COUNT(*)`; avoid manual row deletions to prevent duplicates.
